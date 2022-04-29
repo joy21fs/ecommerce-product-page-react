@@ -1,0 +1,91 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+:root {
+  /* colors */
+  --orange: hsl(26, 100%, 55%);
+  --pale-orange: hsl(25, 100%, 94%);
+
+  --clr-product-description: hsl(219, 9%, 45%);
+  --clr-full-price: hsl(220, 14%, 75%);
+  --bg-light-gray: hsl(223, 64%, 98%);
+  --bg-lightbox: hsla(0, 0%, 0%, 0.75);
+  --bg-cart-shadow: hsl(220, 13%, 13%);
+
+  /* - Light grayish blue: hsl(223, 64%, 98%) */
+
+  /* letter-spacing */
+
+  /* font-sizes */
+
+  /* font-families */
+}
+
+/* ------------------- */
+/* resets              */
+/* ------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+figure,
+picture {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5; /* more readable than the default 1.2 */
+  /* font-family: ; the paragraph text */
+  font-family: "Kumbh Sans", sans-serif;
+  /* font-size: ; */
+  font-size: 1rem;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,40 @@
+.lightbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-lightbox);
+  justify-content: center;
+  transform: scale(0);
+}
+
+.lightbox.show {
+  transform: scale(1);
+}
+
+.lightbox > * {
+  max-width: 50vw;
+}
+
+.lightbox .gallery .close-btn {
+  z-index: 10000;
+  display: inherit;
+  position: absolute;
+  right: 12%;
+  background-color: transparent;
+  top: -4rem;
+  transform: scale(2);
+}
+
+.lightbox .gallery .carousel-btn {
+  display: inherit;
+  width: 2rem;
+  top: 40%;
+}
+
+.previous-icon {
+  left: 3%;
+}
+
+.next-icon {
+  right: 3%;
+}

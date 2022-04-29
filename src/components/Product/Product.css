@@ -1,0 +1,21 @@
+h1 span {
+  display: block;
+  color: var(--orange);
+  font-size: 50%;
+  margin-block: 0.5rem;
+}
+
+article p {
+  color: var(--clr-product-description);
+  margin-block: 0.5rem;
+}
+
+.product h1 {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 53em) {
+  .product {
+    align-self: end;
+  }
+}

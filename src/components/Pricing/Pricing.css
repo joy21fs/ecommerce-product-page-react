@@ -1,0 +1,88 @@
+.pricing.grid {
+  grid-template-areas:
+    "discount full-price"
+    "amount amount"
+    "button button";
+  align-items: baseline;
+}
+
+.pricing > * {
+  border-radius: 10px;
+
+  padding-block: 1rem;
+}
+
+.discount {
+  grid-area: discount;
+}
+
+.discount span {
+  font-size: 60%;
+  color: var(--orange);
+  background-color: var(--pale-orange);
+  padding: 5px 0.5rem;
+  border-radius: 10px;
+}
+
+.full-price {
+  grid-area: full-price;
+  text-decoration: line-through;
+  color: var(--clr-full-price);
+  justify-self: end;
+}
+
+.amount {
+  grid-area: amount;
+  background-color: var(--bg-light-gray);
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.amount button {
+  box-sizing: content-box;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1rem;
+  margin-inline: 1rem;
+}
+
+.minus-btn {
+  background-image: url("../../images/icon-minus.svg");
+}
+
+.add-btn {
+  background-image: url("../../images/icon-plus.svg");
+}
+
+.add-to-cart-btn {
+  grid-area: button;
+  background-color: var(--orange);
+  color: var(--pale-orange);
+  font-weight: 700;
+  box-shadow: 0 2.5rem 1.5rem -1rem;
+}
+
+.add-to-cart-btn svg {
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 53em) {
+  .pricing.grid {
+    grid-template-areas:
+      "discount ."
+      "full-price ."
+      "amount button";
+    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .full-price {
+    justify-self: start;
+    margin-top: -2.5rem;
+  }
+
+  .item-count {
+    width: 2ch;
+  }
+}
