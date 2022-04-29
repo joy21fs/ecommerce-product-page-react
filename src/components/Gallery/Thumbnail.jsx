@@ -12,7 +12,6 @@ export default function ThumbNail(props) {
       {imgSrc.map((img, index) => (
         <picture
           key={index}
-          id={index}
           data-active={index === 0 ? true : false}
           className="product-img thumbnail"
         >

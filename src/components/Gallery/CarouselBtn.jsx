@@ -5,6 +5,8 @@ export default function CarouselBtn(props) {
     <button
       className={`carousel-btn ${props.name}`}
       onClick={(event) => props.handleClick(event)}
-    ></button>
+    >
+      <span className="sr-only">{props.name}</span>
+    </button>
   );
 }

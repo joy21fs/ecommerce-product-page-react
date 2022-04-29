@@ -30,14 +30,18 @@ export default function Pricing(props) {
           id="minus-btn"
           className="minus-btn"
           onClick={(event) => updateCount(event)}
-        />
+        >
+          <span className="sr-only">minus</span>
+        </button>
         <span className="item-count">{count}</span>
 
         <button
           id="add-btn"
           className="add-btn"
           onClick={(event) => updateCount(event)}
-        />
+        >
+          <span className="sr-only">add</span>
+        </button>
       </div>
       <button className="add-to-cart-btn" onClick={(event) => addToCart(event)}>
         <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">

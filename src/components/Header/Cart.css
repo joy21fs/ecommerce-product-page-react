@@ -20,11 +20,8 @@
   transform: scale(1);
 }
 
-.cart-container header {
-  border-bottom: 3px solid var(--bg-light-gray);
-}
-
 .cart-container h1 {
+  border-bottom: 3px solid var(--bg-light-gray);
   font-size: 1.5rem;
   padding-bottom: 1rem;
 }
@@ -40,5 +37,6 @@
     padding-inline: 3rem;
     width: 30%;
     right: 6rem;
+    top: 8rem;
   }
 }
