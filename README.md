@@ -28,7 +28,7 @@
 - To make <li>s take up full height of parent and still have text sit in middle vertically, i have to set line-height equal to the height specifically
 
 
-**### Built with**
+### Built With
 
 - Semantic HTML5 markup
 - CSS custom properties
@@ -38,7 +38,7 @@
 - React 
   
     
-**### Screenshots**
+### Screenshots
 
 ![screenshot-mobile](https://user-images.githubusercontent.com/95619834/165950723-ac0239f8-b7b3-4022-ba4e-9385da043b59.png)
 ![screenshot-menu](https://user-images.githubusercontent.com/95619834/165950739-b8997bc2-4a41-4f65-8d17-0ee05daaf5cf.png)
