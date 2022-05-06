@@ -1,18 +1,19 @@
 import React from "react";
 import menu from "../../images/icon-menu.svg";
 import closeIcon from "../../images/icon-close.svg";
+import useWindowWidth from "../../useWindowWidth";
 
 export default function Nav() {
+  const width = useWindowWidth();
+
   function toggleMenu() {
     document.querySelector("nav").classList.toggle("show");
   }
   return (
     <>
-      {window.innerWidth < 848 && (
-        <img src={menu} alt="menu" onClick={toggleMenu} />
-      )}
+      {width < 848 && <img src={menu} alt="menu" onClick={toggleMenu} />}
       <nav>
-        {window.innerWidth < 848 && (
+        {width < 848 && (
           <img
             className="close-icon"
             src={closeIcon}

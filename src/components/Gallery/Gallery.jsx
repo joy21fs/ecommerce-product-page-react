@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import useWindowWidth from "../../useWindowWidth";
 import "./Gallery.css";
 import CarouselBtn from "./CarouselBtn";
 import Carousel from "./Carousel";
@@ -9,6 +10,7 @@ import product_3 from "../../images/image-product-3.jpg";
 import product_4 from "../../images/image-product-4.jpg";
 
 export default function Gallery() {
+  const width = useWindowWidth();
   const imgSrc = [product_1, product_2, product_3, product_4];
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -43,7 +45,7 @@ export default function Gallery() {
 
   return (
     <section className="gallery flex">
-      {window.innerWidth > 848 && (
+      {width > 848 && (
         <button class="close-btn" onClick={closeLightBox}>
           <span className="sr-only">close</span>
           <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +63,7 @@ export default function Gallery() {
 
       <CarouselBtn name="next-icon" handleClick={handleClick} />
 
-      {window.innerWidth > 848 && <Thumbnail showLightBox={showLightBox} />}
+      {width > 848 && <Thumbnail showLightBox={showLightBox} />}
     </section>
   );
 }
