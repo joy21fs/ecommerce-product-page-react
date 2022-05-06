@@ -20,6 +20,7 @@
 
 ### What I learned
 
+- React custom hook & useLayoutEffect
 - build a carousel without using Bootstrap
 - change SVG color with "fill"
 - cannot add pseudo elements (::before, ::after) on <img>
